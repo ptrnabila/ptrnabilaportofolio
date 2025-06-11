@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kontak - Nabila</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url(gambar/lp.jpg) no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    nav {
+      background-color: #1a1a1a;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      border-bottom: 3px solid orange;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .section {
+      padding: 60px 30px;
+      background-color: rgba(0, 0, 0, 0.7);
+      min-height: 100vh;
+    }
+
+    .contact {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 50px;
+    }
+
+    .contact img.profile {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 20px;
+      border: 4px solid white;
+    }
+
+    .info {
+      max-width: 400px;
+      animation: slideFade 1s ease forwards;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    @keyframes slideFade {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .info-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+
+    .info-item img {
+      width: 30px;
+      margin-right: 10px;
+    }
+
+    .info-item a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .info-item a:hover {
+      text-decoration: underline;
+      color: orange;
+    }
+
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #ccc;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    @media screen and (max-width: 768px) {
+      .contact {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index1.html">Home</a>
+    <a href="index2.html">About</a>
+    <a href="index3.html">Experience</a>
+    <a href="index4.html">Skill</a>
+    <a href="index5.html">Certificate</a>
+    <a href="index6.html">Contact</a>
+  </nav>
+
+  <section class="section" id="contact">
+    <h2 style="text-align:center; font-size: 32px; margin-bottom: 30px;">Kontak</h2>
+    <div class="contact">
+      <img src="gambar/nabila.jpg" class="profile" alt="Foto Nabila" />
+      <div class="info">
+        <div class="info-item">
+          <img src="gambar/gmail.png" alt="gmail" />
+          <a href="mailto:bellanabila3620@gmail.com">bellanabila3620@gmail.com</a>
+        </div>
+        <div class="info-item">
+          <img src="gambar/whatsapp.png" alt="whatsapp" />
+          <a href="https://wa.me/6285772321428" target="_blank">+62 857 7232 1428</a>
+        </div>
+        <div class="info-item">
+          <img src="gambar/linkedin.png" alt="linkedin" />
+          <a href="https://www.linkedin.com/in/nabila-putri-63412a32a/" target="_blank">Nabila Putri</a>
+        </div>
+        <div class="info-item">
+          <img src="gambar/instagram.png" alt="instagram" />
+          <a href="https://www.instagram.com/putriin_abillaa?igsh=MWtpangxeXV3ZDk3bg==" target="_blank">@putriin_abilaa</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Nabila Putri. All Rights Reserved.
+  </footer>
+
+</body>
+</html>

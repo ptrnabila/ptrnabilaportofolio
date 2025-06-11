@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pengalaman Saya</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: url(gambar/lp.jpg) no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      position: relative;
+      min-height: 100vh;
+    }
+
+    /* Overlay hitam untuk meredupkan background */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: -1;
+    }
+
+    header {
+      background-color: rgba(44, 44, 44, 0.9);
+      padding: 10px 0;
+      border-bottom: 2px solid orange;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    .experience-section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .experience-section h1 {
+      color: orange;
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5em;
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .profile-img img {
+      width: 260px;
+      height: auto;
+      border-radius: 50%;
+      border: 4px solid white;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .description {
+      max-width: 600px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .description h3 {
+      font-size: 1.6em;
+      margin-bottom: 15px;
+    }
+
+    .description h3 span {
+      color: orange;
+    }
+
+    .description p, .description ul {
+      font-size: 1.15em;
+      line-height: 1.7;
+    }
+
+    .description ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    footer {
+      background-color: rgba(26, 26, 26, 0.9);
+      color: #ccc;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+      border-top: 2px solid orange;
+      font-size: 1em;
+    }
+
+    /* Animasi */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index1.html">Home</a></li>
+        <li><a href="index2.html">About</a></li>
+        <li><a href="index3.html">Experience</a></li>
+        <li><a href="index4.html">Skill</a></li>
+        <li><a href="index5.html">Certificate</a></li>
+        <li><a href="index6.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="experience-section">
+    <h1>Pengalaman Saya</h1>
+    <div class="content">
+      <div class="profile-img">
+        <img src="gambar/nabila.jpg" alt="Foto Profil">
+      </div>
+      <div class="description">
+        <h3>🛡️ Anggota Paskibra<br>SMKN 1 NGLEGOK <span>: 2023 - 2025</span></h3>
+        <p>Saya mengikuti ekstrakurikuler Paskibra di SMKN 1 NGLEGOK pada tahun 2023, saat saya mengikuti ekstra tersebut banyak pengalaman yang saya dapat serta saya juga mengikuti 3 diklat dalam ekstra ini.</p>
+
+        <p>Di TKJ saya mendapatkan beberapa pengalaman:</p>
+        <ul>
+          <li>Mampu melakukan konfigurasi router dan switch</li>
+          <li>Menciptakan Desain Web Menarik dan Modern dengan Figma</li>
+          <li>Merancang Tampilan Web Interaktif Menggunakan HTML, CSS, dan JavaScript di Visual Studio Code</li>
+          <li>Membuat Website Statis</li>
+          <li>Menyambungkan kabel FO</li>
+          <li>Mengembangkan Website Dinamis dengan WordPress, Moodle dan Sourcecode</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Putri Nabila. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
